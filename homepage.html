@@ -45,8 +45,16 @@
             color: white;
             font-family: 'ShantyHouse', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-weight: medium;
-            font-size: 2.5em;
+            font-size: 3vw;
             text-shadow: -7px 8px 0 #FFFFFF19;
+        }
+        #page-nav {
+            height: 100%;
+        }
+        .nav-link img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
         }
 
         /* Particle Styles */
@@ -73,15 +81,15 @@
                             </h1>
                         </div>
                         <div id="page-nav">
-                            <nav>
-                                <button id="nav-link-home">
-                                    <img src="../static/svg/home_dog.svg" class="min-w-20" width="55%" height="auto"/>
+                            <nav class="h-full flex flex-row">
+                                <button class="nav-link flex-1 h-full flex items-center justify-center">
+                                    <img src="../static/svg/home_dog.svg"/>
                                 </button>
-                                <button id="nav-link-home">
-                                    <img src="../static/svg/kennel_cat.svg" class="min-w-20" width="55%" height="auto"/>
+                                <button class="nav-link flex-1 h-full flex items-center justify-center">
+                                    <img src="../static/svg/kennel_cat.svg"/>
                                 </button>
-                                <button id="nav-link-home">
-                                    <img src="../static/svg/about_bird.svg" class="min-w-20" width="55%" height="auto"/>
+                                <button class="nav-link flex-1 h-full flex items-center justify-center">
+                                    <img src="../static/svg/about_bird.svg"/>
                                 </button>
                             </nav>
                         </div>
@@ -90,6 +98,9 @@
             </div>
             <div id="scrollable">
                 <div id="page-content">
+                    <div class="table">
+                        
+                    </div>
                 </div>
             </div>
         </div>
