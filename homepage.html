@@ -6,6 +6,16 @@
     <title>Welcome to Animal Nomers</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* Imports, Fonts, & Variables */
+        @font-face {
+            font-family: 'ShantyHouse';
+            src: url('../static/fonts/ShantyHouseRegular-K7j4l.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        /* --- */
+
         /* Prelim */
         html, body {
             margin: 0;
@@ -17,7 +27,7 @@
             min-height: 100vh;
         }
         #background-wrapper {
-            background: linear-gradient(to bottom right, #FB89AA 17%, #3CABEC 76%, #FB84B6 100%);
+            background: white;
         }
         #fixed {position: fixed;}
         #scrollable {position: absolute;}
@@ -26,18 +36,29 @@
         #page-header {
             width: 100vw;
             height: 11.25vh;
-            background: linear-gradient(to right, #FFA6F846 20%, #FFA6F800 60%);
+            background: linear-gradient(to right, #FFA6F8 20%, #3CABEC 60%);
         }
         #page-content {
             margin-top: 11.25vh;
         }
         #title {
             color: white;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: bold;
+            font-family: 'ShantyHouse', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: medium;
             font-size: 2.5em;
             text-shadow: -7px 8px 0 #FFFFFF19;
         }
+
+        /* Particle Styles */
+        .woof-particle, .meow-particle {
+            font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            font-size: .8em;
+            color: rgb(48, 48, 48);
+        }
+        .meow-particle {
+        }
+        /* --- */
     </style>
 </head>
 <body>
@@ -45,19 +66,30 @@
         <div id="background-wrapper">
             <div id="fixed">
                 <div id="page-header">
-                    <div class="h-full mx-5 flex flex-row items-center">
+                    <div class="h-full mx-5 flex flex-row items-center justify-between">
                         <div id="page-title">
                             <h1 id="title">
                                 Animal Nomers
                             </h1>
+                        </div>
+                        <div id="page-nav">
+                            <nav>
+                                <button id="nav-link-home">
+                                    <img src="../static/svg/home_dog.svg" class="min-w-20" width="55%" height="auto"/>
+                                </button>
+                                <button id="nav-link-home">
+                                    <img src="../static/svg/kennel_cat.svg" class="min-w-20" width="55%" height="auto"/>
+                                </button>
+                                <button id="nav-link-home">
+                                    <img src="../static/svg/about_bird.svg" class="min-w-20" width="55%" height="auto"/>
+                                </button>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="scrollable">
                 <div id="page-content">
-                    <div>
-                    </div>
                 </div>
             </div>
         </div>
