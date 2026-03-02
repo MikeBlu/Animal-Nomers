@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Animal Nomers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script defer src="./js/homepage.js"></script>
+    <link rel="stylesheet" href="./css/homepage.css">
+</head>
+<body>
+    <div id="main">
+        <div id="background-wrapper">
+            <div id="fixed">
+                <div id="page-header">
+                    <div class="h-full mx-5 flex flex-row items-center justify-between">
+                        <div id="page-title">
+                            <h1 id="title">
+                                Animal Nomers
+                            </h1>
+                        </div>
+                        <div id="page-nav">
+                            <nav class="h-full flex flex-row">
+                                <button class="nav-link">
+                                    <img src="../static/svg/home_dog-notext.svg"/>
+                                </button>
+                                <button class="nav-link">
+                                    <img src="../static/svg/kennel_cat-notext.svg"/>
+                                </button>
+                                <button class="nav-link">
+                                    <img src="../static/svg/about_bird-notext.svg"/>
+                                </button>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="scrollable">
+                <div id="page-content">
+                    <div class="grid grid-cols-[2fr_3fr] mx-5 justify-between gap-9 py-4">
+                       <div id="info-pane">
+                            <div id="info-container" class="flex flex-col">
+                                <div id="card-slider" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar py-10">
+                                    
+                                    <div class="snap-center shrink-0 w-full px-4 drift">
+                                        <div class="info-box p-10" onclick="bounce(this)">
+                                            <h1>About Us</h1>
+                                            <p>First card content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="snap-center shrink-0 w-full px-4 drift">
+                                        <div class="info-box p-10" onclick="bounce(this)">
+                                            <h1>Our Mission</h1>
+                                            <p>Second card content. Sed nisi neque, vestibulum eget risus nec, sodales aliquam tellus.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="snap-center shrink-0 w-full px-4 drift">
+                                        <div class="info-box p-10" onclick="bounce(this)">
+                                            <h1>Contact</h1>
+                                            <p>Third card content. Donec non ipsum a est tincidunt maximus ac sit amet est.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div id="info-bar-container" class="flex h-5 items-center px-4">
+                                    <div id="info-bar-bg" class="w-full h-2 bg-[#cfe1f1] rounded-full overflow-hidden">
+                                        <div id="info-bar-fill" class="h-full bg-[#4da6ff] transition-all duration-300 ease-out" style="width: 33%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div id="catchy-pane">
+                            <div class="image-cluster">
+                                <div class="card card-1">
+                                    <img class="bg-cover" src="https://picsum.photos/400/500?random=1" alt="Abstract 1">
+                                </div>
+                                <div class="card card-2">
+                                    <img class="bg-cover" src="https://picsum.photos/400/500?random=2" alt="Abstract 2">
+                                </div>
+                                <div class="card card-3">
+                                    <img class="bg-cover" src="https://picsum.photos/400/500?random=3" alt="Abstract 3">
+                                </div>
+                                <div class="card card-4">
+                                    <img class="bg-cover" src="https://picsum.photos/400/500?random=4" alt="Abstract 4">
+                                </div>
+                                <div class="card card-5">
+                                    <img class="bg-cover" src="https://picsum.photos/400/500?random=5" alt="Abstract 5">
+                                </div>
+                                <div class="card card-6">
+                                    <img class="bg-cover" src="https://picsum.photos/400/500?random=6" alt="Abstract 6">
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="relative w-full pt-3" style="line-height: 0;">
+                        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
+                            <path d="M0 0H1440V60C1440 60 1080 120 720 120C360 120 0 60 0 60V0Z" fill="#bae3f5"/>
+                        </svg>
+                        
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-[#bae3f5] text-2xl">
+                                🐾
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="max-w-6xl mx-auto px-6 py-12">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                            
+                            <div class="mt-8 bg-white p-6 rounded-3xl shadow-sm border-2 border-[#bae3f5] hover:rotate-1 transition-transform">
+                                <h3 class="font-bold text-[#7ab6d2] mb-2">The Playful Paws</h3>
+                                <p class="text-gray-600 text-sm">A collection of names for animals that just can't stop moving. High energy, high cute-factor.</p>
+                            </div>
+
+                            <div class="bg-white p-8 rounded-3xl shadow-md border-2 border-[#bae3f5] relative">
+                                <span class="absolute -top-3 left-6 bg-[#bae3f5] text-white text-xs px-3 py-1 rounded-full uppercase tracking-widest font-bold">Trending</span>
+                                <h3 class="font-bold text-xl text-[#7ab6d2] mb-3">Sleepy Sovereigns</h3>
+                                <p class="text-gray-700">Perfect monikers for the kings and queens of the midday nap. For the cats and dogs who own the couch.</p>
+                            </div>
+
+                            <div class="mt-4 -rotate-1 bg-white p-6 rounded-3xl shadow-sm border-2 border-[#bae3f5] hover:rotate-0 transition-transform">
+                                <h3 class="font-bold text-[#7ab6d2] mb-2">Tiny Titans</h3>
+                                <p class="text-gray-600 text-sm">For the smallest creatures with the biggest personalities. Think hamsters with dragon names.</p>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
