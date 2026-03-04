@@ -10,13 +10,11 @@
 
 /* Prelim */
 html, body {
-    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
 }
 #main > div {
     position: relative;
-    width: 100%;
     min-height: 100vh;
 }
 #background-wrapper {
@@ -34,7 +32,7 @@ html, body {
     background: linear-gradient(135deg, #4da6ff 15%, #2a84dee9 70%);
 }
 #page-content {
-    width: 100vw;
+    width: 100%;
     margin-top: 11.25vh;
 }
 #title {
