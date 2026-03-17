@@ -46,7 +46,8 @@
 <path
    d="m 155,61 h 15 v 15 m 0,0 a 7.5,7.5 0 0 1 -15,0 V 61"
    fill="#f85485"
-   id="tongue">
+   id="tongue"
+   transform-origin="center">
    <animateTransform
       attributeName="transform"
       attributeType="XML"
